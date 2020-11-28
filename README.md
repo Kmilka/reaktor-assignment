@@ -1,10 +1,10 @@
 # Reaktor-assignment for the Spring Internship
 
-More info about internship [here](https://www.reaktor.com/careers/developer-spring-2021-4939207002/)
+More info about internship 2021 [here](https://www.reaktor.com/careers/developer-spring-2021-4939207002/)
 
 ## About the App
 
-It's an app to use in warehouses. It displays lists of products per category. For now only 3 categories: jackets. shirts and accessories.
+It's an app to use in warehouses. It displays lists of products per category. For now only 3 categories: jackets, shirts and accessories.
 
 ## About the realization
 

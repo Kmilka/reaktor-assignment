@@ -2,7 +2,7 @@ const API = "https://bad-api-assignment.reaktor.com/";
 const headers = {
   "Content-Type": "application/json",
   "Cache-Control": "max-age=300, must-revalidate",
-  "x-force-error-mode": "all",
+  // "x-force-error-mode": "all",
 };
 
 const options = {
@@ -22,7 +22,7 @@ async function fetchData(route) {
         for (let pair of res.headers.entries()) {
           if (pair[0] === "content-length") {
             if (Number(pair[1]) < 50) {
-              return;
+              fetchData(route);
             } else {
               // cache all responses for 5 minutes
               cache.add(`${API}${route}`);
