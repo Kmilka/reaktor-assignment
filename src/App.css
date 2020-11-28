@@ -1,0 +1,74 @@
+button {
+  cursor: pointer;
+}
+
+button {
+  font-size: calc(10px + 1vmin);
+  margin: 2px;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  border: transparent;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-transform: capitalize;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.name {
+  height: calc(40px + 4vmin);
+  background-color: rgb(232, 238, 240);
+  text-align: center;
+}
+
+.card {
+  border: 2px solid rgb(232, 238, 240);
+  margin: 5px;
+  font-size: calc(10px + 1vmin);
+}
+
+.out {
+  background-color: rgb(253, 237, 237);
+}
+
+.less-than-10 {
+  background-color: rgb(253, 253, 237);
+}
+
+p {
+  margin: 2px;
+}
+
+.scroll {
+  height: 90vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 2px solid #dedce2;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rotation {
+  animation: rotation 2s infinite linear;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
