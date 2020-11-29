@@ -9,5 +9,9 @@ It's an app to use in warehouses. It displays lists of products per category. Fo
 ## About the realization
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 Deployed into [Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/getting-started-with-github-pages)
+
+## TODO
+
+I made this solution in a way to do as little work as possible when the server refactored.
+I suggest creating a "middleware"-server to process data from the current one and fix all the issues and add new functionality. With GraphQL it may be achievable and relatively simple.
