@@ -13,5 +13,9 @@ Deployed into [Github Pages](https://docs.github.com/en/free-pro-team@latest/git
 
 ## TODO
 
-I made this solution in a way to do as little work as possible when the server refactored.
-I suggest creating a "middleware"-server to process data from the current one and fix all the issues and add new functionality. With GraphQL it may be achievable and relatively simple.
+1. I made this solution in a way to do as little work as possible when the server refactored.
+   I suggest creating a "middleware"-server to process data from the current API and fix all the issues. With GraphQL it may be achievable and relatively simple.
+
+2. Also, I need to increase responsiveness by adding infinite scroll.
+
+3. Adding search and filters is a good idea.
