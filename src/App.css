@@ -55,6 +55,11 @@ p {
   flex-direction: row;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 .rotation {
   animation: rotation 2s infinite linear;
 }
