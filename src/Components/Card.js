@@ -3,11 +3,14 @@ import Loading from "./Loading";
 function Card({ info }) {
   return (
     <div className="card">
-      <p className="name">{info.name}</p>
-      <p>Price: {info.price}</p>
-      <p>Colors: {info.color.join("-")}</p>
-      <p>Mfr.: {info.manufacturer}</p>
+      <div className="fixed-height">
+        <p className="name">{info.name}</p>
+        <p>Price: {info.price}</p>
+        <p>Colors: {info.color.join("-")}</p>
+        <p>Mfr.: {info.manufacturer}</p>
+      </div>
       {info.availability ? (
+        // todo: find better way to style availability info due to text
         <p
           className={
             info.availability === "OUT OF STOCK"
