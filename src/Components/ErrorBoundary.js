@@ -13,9 +13,9 @@ class ErrorBoundary extends React.Component {
       error: error,
       errorInfo: errorInfo,
     });
+    // find a way to preserve all valid cached responses when error occurs
     clearCache();
-    setTimeout(window.location.reload(), 7000);
-    // You can also log error messages to an error reporting service here
+    setTimeout(() => window.location.reload(), 5000);
   }
 
   render() {

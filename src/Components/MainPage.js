@@ -17,19 +17,19 @@ function MainPage() {
   let [categoryOnDisplay, setCategoryOnDisplay] = useState(initialCategory);
   let [manufacturers, setManufacturers] = useState([]);
   let [loadingStatus, setloadingStatus] = useState(true);
-  let [fetchIndicator, setfetchIndicator] = useState(-1);
   let [error, setError] = useState("");
+  // = index shows for which element in the "manufacturers" array "fetchAvailability" function loads data now
+  // values could be: -1, 0 -> manufacturers.length (included)
+  let [fetchIndicator, setfetchIndicator] = useState(-1);
 
   useEffect(() => {
     fetchProduct();
-    // eslint-disable-next-line
   }, [categoryOnDisplay]);
 
   useEffect(() => {
     if (!loadingStatus) {
       fetchAvailability();
     }
-    // eslint-disable-next-line
   }, [fetchIndicator]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function MainPage() {
     }
   }, [error]);
 
-  // fetch products in the chosen category and update the State
+  // fetch products for the categoryOnDisplay
   const fetchProduct = () => {
     let manufacturers = new Set();
     fetchData(`products/${categoryOnDisplay}`)
@@ -54,14 +54,16 @@ function MainPage() {
       });
   };
 
-  //  fetch availability of the manufacturer, then upload it to products array and update the State
+  //  fetch availability for the manufacturer and upload it to products array
   const fetchAvailability = () => {
+    // true == data was fetched for all manufacturers
     if (fetchIndicator === manufacturers.length) {
       return;
     } else {
       const manufacturer = manufacturers[fetchIndicator];
       fetchData(`availability/${manufacturer}`)
         .then((data) => {
+          // workaround: change data.response to data
           const availability = data.response;
           // go through the products array and search for the same id in the availability array, which was just fetched
           for (let index = 0; index < products.length; index++) {
@@ -70,7 +72,7 @@ function MainPage() {
                 (one) => products[index].id === one.id.toLowerCase()
               );
               if (availabilityInfo !== undefined) {
-                // work-around: format data from the source
+                // workaround: format data from the source
                 const productAvailability = formatPayload(
                   availabilityInfo.DATAPAYLOAD
                 );
@@ -91,7 +93,7 @@ function MainPage() {
     }
   };
 
-  // is invoked when user changes product category by pressing the button with the category name on it
+  // is invoked when user changes product category by pressing the button in the Switcher
   const switchCategory = (newCategory) => {
     setCategoryOnDisplay(newCategory);
     setloadingStatus(true);

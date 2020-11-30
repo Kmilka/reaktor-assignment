@@ -10,18 +10,20 @@ const options = {
   headers,
 };
 
+const cacheName = "app-cache";
+
 export async function clearCache() {
-  caches.delete("app-cache");
+  caches.delete(cacheName);
 }
 
 async function fetchCachedData(route) {
-  const cache = await caches.open("app-cache");
+  const cache = await caches.open(cacheName);
   const response = await cache.match(`${API}${route}`);
   return response;
 }
 
 export async function fetchData(route) {
-  const cache = await caches.open("app-cache");
+  const cache = await caches.open(cacheName);
   const response = await fetchCachedData(route);
   if (response !== undefined) {
     return response.json();
