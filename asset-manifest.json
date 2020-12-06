@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/reaktor-assignment/static/css/main.f33bfa79.chunk.css",
-    "main.js": "/reaktor-assignment/static/js/main.e90993ad.chunk.js",
-    "main.js.map": "/reaktor-assignment/static/js/main.e90993ad.chunk.js.map",
-    "runtime-main.js": "/reaktor-assignment/static/js/runtime-main.b60743d9.js",
-    "runtime-main.js.map": "/reaktor-assignment/static/js/runtime-main.b60743d9.js.map",
-    "static/js/2.bc6a6155.chunk.js": "/reaktor-assignment/static/js/2.bc6a6155.chunk.js",
-    "static/js/2.bc6a6155.chunk.js.map": "/reaktor-assignment/static/js/2.bc6a6155.chunk.js.map",
-    "static/js/3.4f481ba2.chunk.js": "/reaktor-assignment/static/js/3.4f481ba2.chunk.js",
-    "static/js/3.4f481ba2.chunk.js.map": "/reaktor-assignment/static/js/3.4f481ba2.chunk.js.map",
+    "main.css": "/reaktor-assignment/static/css/main.7837cf81.chunk.css",
+    "main.js": "/reaktor-assignment/static/js/main.7c32713f.chunk.js",
+    "main.js.map": "/reaktor-assignment/static/js/main.7c32713f.chunk.js.map",
+    "runtime-main.js": "/reaktor-assignment/static/js/runtime-main.dc437365.js",
+    "runtime-main.js.map": "/reaktor-assignment/static/js/runtime-main.dc437365.js.map",
+    "static/js/2.6fef4909.chunk.js": "/reaktor-assignment/static/js/2.6fef4909.chunk.js",
+    "static/js/2.6fef4909.chunk.js.map": "/reaktor-assignment/static/js/2.6fef4909.chunk.js.map",
+    "static/js/3.e34aca6d.chunk.js": "/reaktor-assignment/static/js/3.e34aca6d.chunk.js",
+    "static/js/3.e34aca6d.chunk.js.map": "/reaktor-assignment/static/js/3.e34aca6d.chunk.js.map",
     "index.html": "/reaktor-assignment/index.html",
-    "static/css/main.f33bfa79.chunk.css.map": "/reaktor-assignment/static/css/main.f33bfa79.chunk.css.map",
-    "static/js/2.bc6a6155.chunk.js.LICENSE.txt": "/reaktor-assignment/static/js/2.bc6a6155.chunk.js.LICENSE.txt",
+    "static/css/main.7837cf81.chunk.css.map": "/reaktor-assignment/static/css/main.7837cf81.chunk.css.map",
+    "static/js/2.6fef4909.chunk.js.LICENSE.txt": "/reaktor-assignment/static/js/2.6fef4909.chunk.js.LICENSE.txt",
     "static/media/loading.b33cf617.png": "/reaktor-assignment/static/media/loading.b33cf617.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b60743d9.js",
-    "static/js/2.bc6a6155.chunk.js",
-    "static/css/main.f33bfa79.chunk.css",
-    "static/js/main.e90993ad.chunk.js"
+    "static/js/runtime-main.dc437365.js",
+    "static/js/2.6fef4909.chunk.js",
+    "static/css/main.7837cf81.chunk.css",
+    "static/js/main.7c32713f.chunk.js"
   ]
 }
